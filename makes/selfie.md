@@ -20,6 +20,30 @@ A space for documenting my digital humanities journey through self-portraits and
 
 ---
 
+### Selfie Study - February 8, 2026
+![Selfie study 1](../images/selfie-1.png)
+*Minimalist selfie study version 1.*
+
+---
+
+### Selfie Study - February 8, 2026
+![Selfie study 2](../images/selfie-2.png)
+*Minimalist selfie study version 2.*
+
+---
+
+### Selfie Study - February 8, 2026
+![Selfie study 3](../images/selfie-3.png)
+*Minimalist selfie study version 3.*
+
+---
+
+### Selfie Study - February 8, 2026
+![Selfie study 4](../images/selfie-4.png)
+*Minimalist selfie study version 4.*
+
+---
+
 ## Notes
 - Supported formats: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`
 - Consider image size for web performance (recommend under 2MB)
