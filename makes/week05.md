@@ -1,6 +1,8 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
+![My GIF Creation](../assets/images/make 4.gif)
+
 Describe or embed your artifact here.
 Include images, links, or media as appropriate.
 
