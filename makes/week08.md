@@ -1,7 +1,9 @@
 # Week 8 – Networks of Knowledge & Power
 
 ## The Artifact
-Describe or embed your artifact here.
+- [Personal network visualization (PDF)](../assets/week08/personal-network.pdf)
+- [Networks of knowledge and power document (PDF)](../assets/week08/networks-of-knowledge-and-power.pdf)
+
 Include images, links, or media as appropriate.
 
 ## Process Notes
