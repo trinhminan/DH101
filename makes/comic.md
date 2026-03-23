@@ -1,6 +1,6 @@
 # Comic
 
-![Comic profile image](../images/comic.png)
+![A short six-panel comic with recurring characters moving through connected scenes; AI-generated backgrounds and character styling support the narrative progression.](../images/comic.png)
 
 A short description of my comic project will go here.
 

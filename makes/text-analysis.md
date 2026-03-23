@@ -1,7 +1,7 @@
 # Text Analysis
 
-![Screenshot 1](../assets/images/Screenshot%202026-03-03%20at%2022.22.26.png)
+![Word-frequency and keyword visualization from a text analysis tool, showing dominant terms and distribution patterns used for distant reading.](../assets/images/Screenshot%202026-03-03%20at%2022.22.26.png)
 
-![Screenshot 2](../assets/images/Screenshot%202026-03-03%20at%2022.22.56.png)
+![Visualization and interpretive output combining computational text analysis with GPT-generated literary commentary on recurring themes.](../assets/images/Screenshot%202026-03-03%20at%2022.22.56.png)
 
-[Chat GPT responds.docx](Chat%20GPT%20responds.docx)
+[GPT-generated literary analysis response document](Chat%20GPT%20responds.docx)

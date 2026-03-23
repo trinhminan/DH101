@@ -15,31 +15,31 @@ A space for documenting my digital humanities journey through self-portraits and
 ## My Photos
 
 ### AI-Generated Image - February 4, 2026
-![AI-generated selfie](../images/ChatGPT%20Image%20Feb%204,%202026,%2004_17_16%20PM.png)
+![AI-generated selfie portrait with stylized facial features and synthetic lighting, showing subtle distortions in texture and proportion typical of generative image tools.](../images/ChatGPT%20Image%20Feb%204,%202026,%2004_17_16%20PM.png)
 *ChatGPT generated image from February 4, 2026*
 
 ---
 
 ### Selfie Study - February 8, 2026
-![Selfie study 1](../images/selfie-1.png)
+![Remixed selfie edit with simplified shapes and adjusted contrast, emphasizing artistic intervention over photorealistic detail.](../images/selfie-1.png)
 *Minimalist selfie study version 1.*
 
 ---
 
 ### Selfie Study - February 8, 2026
-![Selfie study 2](../images/selfie-2.png)
+![Second remixed selfie variation with altered facial lines and color treatment, making visible the transformation from the original portrait.](../images/selfie-2.png)
 *Minimalist selfie study version 2.*
 
 ---
 
 ### Selfie Study - February 8, 2026
-![Selfie study 3](../images/selfie-3.png)
+![Third edited selfie version with stylized edges and softened details, highlighting distortion and intentional visual abstraction.](../images/selfie-3.png)
 *Minimalist selfie study version 3.*
 
 ---
 
 ### Selfie Study - February 8, 2026
-![Selfie study 4](../images/selfie-4.png)
+![Fourth remixed selfie image with graphic simplification and tonal shifts that foreground the artist’s edits and curation choices.](../images/selfie-4.png)
 *Minimalist selfie study version 4.*
 
 ---

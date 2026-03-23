@@ -1,7 +1,7 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
-![My GIF Creation](../assets/images/make 4.gif)
+![Animated GIF remix showing a repeated visual loop where motion and pacing shift the meaning of the original source over time.](../assets/images/make 4.gif)
 
 Describe or embed your artifact here.
 Include images, links, or media as appropriate.
