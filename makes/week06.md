@@ -7,8 +7,9 @@ permalink: /makes/week06/
 # Week 6 – Text & Distant Reading
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![Screenshot 1 showing text analysis artifact](/DH101/images/Screenshot%202026-03-24%20at%2021.29.51.png)
+
+![Screenshot 2 showing additional text analysis artifact](/DH101/images/Screenshot%202026-03-24%20at%2021.30.43.png)
 
 ## Process Notes
 How did you make this?
