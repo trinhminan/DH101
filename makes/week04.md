@@ -9,6 +9,8 @@ permalink: /makes/week04/
 ## The Artifact
 ![A multi-panel comic exploring the relationship between human ambition, memory, and artificial intelligence. The story follows a journalist who sacrifices her life for achievement and asks an AI to send her memories back to her younger self, creating an ethical dilemma about identity and choice.](/DH101/images/comic.png)
 
+*A multi-panel comic exploring the relationship between human ambition, memory, and artificial intelligence. The story follows a journalist who sacrifices her life for achievement and asks an AI to send her memories back to her younger self, creating an ethical dilemma about identity and choice.*
+
 ## Commentary
 In this comic, I explore the relationship between human ambition, memory, and the ethical role of artificial intelligence. The story follows a journalist who sacrifices her life in pursuit of a meaningful achievement, only to ask an AI system to send her memories back to her younger self. This creates a moment where the past version of the character must decide whether to live an ordinary life at the cost of losing her identity and memories.
 I chose the comic format because visual panels allow emotional tension and temporal shifts to appear simultaneously. The separation between past, future, and the AI’s memory space becomes clearer through spatial storytelling rather than linear text. Each panel represents a stage of awareness: ambition, consequence, revelation, choice, and aftermath. This structure reflects how technological intervention can reshape human destiny while remaining emotionally distant.
