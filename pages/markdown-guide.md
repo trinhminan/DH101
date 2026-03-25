@@ -1,3 +1,8 @@
+---
+layout: default
+title: Markdown Guide
+---
+
 # Markdown Guide
 
 Quick reference for writing course pages and reflections.

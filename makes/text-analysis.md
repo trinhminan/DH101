@@ -1,3 +1,8 @@
+---
+layout: default
+title: Text Analysis
+---
+
 # Text Analysis
 
 ![Word-frequency and keyword visualization from a text analysis tool, showing dominant terms and distribution patterns used for distant reading.](../assets/images/Screenshot%202026-03-03%20at%2022.22.26.png)

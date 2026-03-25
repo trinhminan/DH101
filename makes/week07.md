@@ -1,3 +1,8 @@
+---
+layout: default
+title: Week 7
+---
+
 # Week 7 – Mapping AI Worlds
 
 **Name:** Anh Trinh  

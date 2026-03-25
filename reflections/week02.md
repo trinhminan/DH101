@@ -1,3 +1,8 @@
+---
+layout: default
+title: Week 2 Reflection
+---
+
 > **Markdown help:** See [Markdown formatting guide and reflection template](../pages/markdown-guide.md) for formatting tips and a reflection template.
 
 # Week 2 Reflection

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Week 9
+---
+
 # Week 9 – Bots & Generators
 
 ## The Artifact

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Accessibility Statement
+---
+
 # Accessibility Statement
 
 This site was built by Anh for DH 101.

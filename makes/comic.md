@@ -1,3 +1,8 @@
+---
+layout: default
+title: Comic
+---
+
 # Comic
 
 ![A short six-panel comic with recurring characters moving through connected scenes; AI-generated backgrounds and character styling support the narrative progression.](../images/comic.png)

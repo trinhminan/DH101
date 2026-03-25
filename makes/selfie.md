@@ -1,3 +1,8 @@
+---
+layout: default
+title: Selfie Collection
+---
+
 # Selfie Collection
 
 A space for documenting my digital humanities journey through self-portraits and visual reflections.
