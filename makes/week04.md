@@ -7,8 +7,7 @@ permalink: /makes/week04/
 # Week 4 – Comic & Storytelling
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![Comic storytelling visual narrative](../images/comic.png)
 
 ## Process Notes
 How did you make this?
