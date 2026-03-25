@@ -7,9 +7,7 @@ permalink: /makes/week08/
 # Week 8 – Networks of Knowledge & Power
 
 ## The Artifact
-![Network diagram titled "Personal Network" showing relationships and connection patterns between entities in the project context.](/DH101/images/Personal%20Network.jpg)
-
-*Personal Network map showing key nodes and relationships across my network analysis project.*
+<iframe src="https://embed.kumu.io/79db6c544a6df137673122c9b2d42b41" width="940" height="600" frameborder="0"></iframe>
 
 ## Network Analysis
 This network maps my personal AI ecosystem, connecting the platforms I use, the features they provide, and the companies that develop them. At first glance, I appear to be the central node, as multiple applications—ChatGPT, Gemini, TikTok, Spotify, and Meta AI—are directly connected to me through “use” relationships. However, a closer analysis reveals that power is actually concentrated in the platform and corporate nodes, particularly Google, Meta, and ByteDance. My position, while visually central, is structurally dependent on these larger systems.
