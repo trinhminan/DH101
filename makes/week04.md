@@ -7,7 +7,7 @@ permalink: /makes/week04/
 # Week 4 – Comic & Storytelling
 
 ## The Artifact
-![Comic storytelling visual narrative](../images/comic.png)
+![Comic storytelling visual narrative](/DH101/images/comic.png)
 
 ## Process Notes
 How did you make this?
