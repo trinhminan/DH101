@@ -7,10 +7,9 @@ permalink: /makes/week08/
 # Week 8 – Networks of Knowledge & Power
 
 ## The Artifact
-- [Personal network visualization (PDF)](../assets/week08/personal-network.pdf)
-- [Networks of knowledge and power document (PDF)](../assets/week08/networks-of-knowledge-and-power.pdf)
+![Network diagram titled "Personal Network" showing relationships and connection patterns between entities in the project context.](/DH101/images/Personal%20Network.jpg)
 
-Include images, links, or media as appropriate.
+*Personal Network map showing key nodes and relationships across my network analysis project.*
 
 ## Process Notes
 How did you make this?
