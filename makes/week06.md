@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 6
+permalink: /makes/week06/
 ---
 
 # Week 6 – Text & Distant Reading

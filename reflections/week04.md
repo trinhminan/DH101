@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 4 Reflection
+permalink: /reflections/week04/
 ---
 
 # Week 4 Reflection

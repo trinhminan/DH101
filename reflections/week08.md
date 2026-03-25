@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 8 Reflection
+permalink: /reflections/week08/
 ---
 
 # Week 8 Reflection

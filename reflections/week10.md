@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 10 Reflection
+permalink: /reflections/week10/
 ---
 
 # Week 10 Reflection

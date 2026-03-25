@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Comic
+permalink: /makes/comic/
 ---
 
 # Comic

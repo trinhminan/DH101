@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 11 Reflection
+permalink: /reflections/week11/
 ---
 
 # Week 11 Reflection

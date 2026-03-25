@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 5
+permalink: /makes/week05/
 ---
 
 # Week 5 – GIF & Remix Culture

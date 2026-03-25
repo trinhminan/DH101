@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Markdown Guide
+permalink: /pages/markdown-guide/
 ---
 
 # Markdown Guide

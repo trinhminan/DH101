@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accessibility Statement
+permalink: /pages/accessibility/
 ---
 
 # Accessibility Statement

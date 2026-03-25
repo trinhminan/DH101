@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 5 Reflection
+permalink: /reflections/week05/
 ---
 
 # Week 5 Reflection

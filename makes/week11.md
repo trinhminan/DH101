@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 11
+permalink: /makes/week11/
 ---
 
 # Week 11 – AI & Labor

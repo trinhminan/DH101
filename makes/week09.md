@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 9
+permalink: /makes/week09/
 ---
 
 # Week 9 – Bots & Generators

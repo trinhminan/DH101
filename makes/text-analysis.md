@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Text Analysis
+permalink: /makes/text-analysis/
 ---
 
 # Text Analysis

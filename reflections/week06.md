@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 6 Reflection
+permalink: /reflections/week06/
 ---
 
 # Week 6 Reflection

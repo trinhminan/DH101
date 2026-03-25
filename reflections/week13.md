@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 13 Reflection
+permalink: /reflections/week13/
 ---
 
 # Week 13 Reflection

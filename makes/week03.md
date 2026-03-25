@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 3 – Selfie & Identity
+permalink: /makes/week03/
 ---
 
 # Week 3 – Selfie & Identity

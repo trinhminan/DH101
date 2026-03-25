@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 10
+permalink: /makes/week10/
 ---
 
 # Week 10 – Games & Play

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 8
+permalink: /makes/week08/
 ---
 
 # Week 8 – Networks of Knowledge & Power

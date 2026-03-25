@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 7
+permalink: /makes/week07/
 ---
 
 # Week 7 – Mapping AI Worlds

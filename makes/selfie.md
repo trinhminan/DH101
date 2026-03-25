@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Selfie Collection
+permalink: /makes/selfie/
 ---
 
 # Selfie Collection

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 12
+permalink: /makes/week12/
 ---
 
 # Week 12 – AI & Ecology

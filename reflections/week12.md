@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 12 Reflection
+permalink: /reflections/week12/
 ---
 
 # Week 12 Reflection

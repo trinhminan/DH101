@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 13
+permalink: /makes/week13/
 ---
 
 # Week 13 – Futures of AI & Humanity

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sustainability Considerations
+permalink: /pages/sustainability/
 ---
 
 # Sustainability & Ethics

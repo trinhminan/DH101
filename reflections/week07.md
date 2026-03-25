@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 7 Reflection
+permalink: /reflections/week07/
 ---
 
 # Week 7 Reflection

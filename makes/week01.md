@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Week 1 – Reverse Engineering
+permalink: /makes/week01/
 ---
 
 # Week 1 – Reverse Engineering

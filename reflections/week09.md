@@ -3,6 +3,7 @@
 ---
 layout: default
 title: Week 9 Reflection
+permalink: /reflections/week09/
 ---
 
 # Week 9 Reflection
