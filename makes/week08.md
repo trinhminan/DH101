@@ -9,6 +9,8 @@ permalink: /makes/week08/
 ## The Artifact
 <iframe src="https://embed.kumu.io/79db6c544a6df137673122c9b2d42b41" width="940" height="600" frameborder="0"></iframe>
 
+*Alt text: Interactive network map showing my personal AI ecosystem, including connections between user activity, platform features, data flows, and corporate actors such as Google, Meta, ByteDance, TikTok, Spotify, ChatGPT, and Gemini.*
+
 ## Network Analysis
 This network maps my personal AI ecosystem, connecting the platforms I use, the features they provide, and the companies that develop them. At first glance, I appear to be the central node, as multiple applications—ChatGPT, Gemini, TikTok, Spotify, and Meta AI—are directly connected to me through “use” relationships. However, a closer analysis reveals that power is actually concentrated in the platform and corporate nodes, particularly Google, Meta, and ByteDance. My position, while visually central, is structurally dependent on these larger systems.
 
