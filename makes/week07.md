@@ -11,7 +11,7 @@ permalink: /makes/week07/
 **Date:** March 8, 2026
 
 ## The Artifact
-- **Map link or file:** link
+- **Map link or file:** [Interactive map of AI data center locations across North America, Europe, and Asia (Google My Maps)](https://www.google.com/maps/d/u/0/edit?mid=1jth7RELjXs-yiQQ23JHzrG-bxf2M0M8&usp=sharing "Interactive map showing major AI data center infrastructure and geographic concentration")
 
 ## Process Notes
 
