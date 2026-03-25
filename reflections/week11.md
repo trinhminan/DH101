@@ -1,10 +1,10 @@
-> **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
-
 ---
 layout: default
 title: Week 11 Reflection
 permalink: /reflections/week11/
 ---
+
+> **Markdown help:** See [markdown-guide.md](../pages/markdown-guide.md) for formatting tips and a reflection template.
 
 # Week 11 Reflection
 
