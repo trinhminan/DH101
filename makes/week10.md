@@ -10,9 +10,9 @@ permalink: /makes/week10/
 I uploaded my interactive story game here:
 
 - Play in-page (embedded below)
-- Open in new tab: [DH101 Make 9](/assets/week10/dh101-make9.html)
+- Open in new tab: [DH101 Make 9]({{ '/assets/week10/dh101-make9.html' | relative_url }})
 
-<iframe src="/assets/week10/dh101-make9.html" width="100%" height="700" frameborder="0"></iframe>
+<iframe src="{{ '/assets/week10/dh101-make9.html' | relative_url }}" width="100%" height="700" frameborder="0"></iframe>
 
 *Alt text: Interactive branching narrative game where the player acts as an AI content moderator and makes accept/deny decisions across posts involving misinformation, harassment, and discrimination, leading to multiple endings.*
 
