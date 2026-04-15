@@ -9,9 +9,9 @@ permalink: /makes/week11/
 ## The Artifact
 My artifact for Week 11 is a short research slide deck: **Ghosts in the Machine: The Hidden Labor of AI**.
 
-- View/download the PDF: [Ghosts in the Machine (PDF)](/assets/week11/ghosts-in-the-machine-hidden-labor-of-ai.pdf)
+- View/download the PDF: [Ghosts in the Machine (PDF)]({{ '/assets/week11/ghosts-in-the-machine-hidden-labor-of-ai.pdf' | relative_url }})
 
-<iframe src="/assets/week11/ghosts-in-the-machine-hidden-labor-of-ai.pdf" width="100%" height="700" style="border:1px solid #ddd;"></iframe>
+<iframe src="{{ '/assets/week11/ghosts-in-the-machine-hidden-labor-of-ai.pdf' | relative_url }}" width="100%" height="700" style="border:1px solid #ddd;"></iframe>
 
 ## Process Notes
 I made this by reading course materials on ghost work and then organizing the content into a clear 8-page narrative: the problem, the workers, labor conditions, who profits, and what should change. I wrote each section as concise claims so that the PDF could work as both a presentation and a stand-alone reading.
@@ -28,7 +28,6 @@ The main beneficiaries are large tech firms and startups that market products as
 What I found most important is that invisibility is not accidental. It supports a story of frictionless AI while masking the people who make these systems function. If we want ethical AI, labor must be visible and valued. That means transparency about human involvement, fair compensation, better dispute systems, and accountability standards similar to other global supply chains. AI is not just code and models—it is also human labor. Recognizing that changes how we evaluate “innovation” and who should benefit from it.
 
 ## Attribution & AI Use
-- Tools used: Google Slides, PDF export, Jekyll/Markdown, GitHub Copilot (editing support).
-- AI prompts (summary): Asked for help uploading the PDF to Week 11 and drafting responses for all prompts based on the document’s themes.
+- Tools used: Canva, chatGPT
 - What AI generated: Initial draft text for artifact description, process notes, and reflection structure.
 - What you changed or decided: Final wording, emphasis, section flow, and which arguments/examples to include.
