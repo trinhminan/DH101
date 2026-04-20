@@ -7,8 +7,9 @@ permalink: /makes/week12/
 # Week 12 – AI & Ecology
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+This artifact shows the estimated CO₂ emission of using AI over one week.
+
+![CO2 emission of AI in a week]({{ '/assets/images/week12/co2-emission-ai-week.png' | relative_url }})
 
 ## Process Notes
 How did you make this?
