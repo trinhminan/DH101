@@ -10,7 +10,7 @@ permalink: /pages/sustainability/
 
 My research into the environmental impact of artificial intelligence reveals that the “cloud” is far from abstract; it is a physical, resource-heavy infrastructure. AI’s cost is a planetary one, beginning with extractive mining for lithium and rare earth minerals required for hardware. Once active, these systems have an immense energy hunger. For example, training a single large model like GPT-3 has been reported as emitting as much CO₂ as a car driving 1.2 million miles. Beyond carbon, server cooling consumes significant amounts of water—roughly half a liter for every 20 to 50 queries. Overall, the industry is currently on a path of compute maximalism, where speed and accuracy often override ecological limits.
 
-![Estimated CO2 emission of AI use in one week]({{ '/assets/images/week12/co2-emission-ai-week.png' | relative_url }})
+![Comparison of AI use emissions to daily activities]({{ '/assets/images/week12/comparison-daily-activities.jpg' | relative_url }})
 
 ## Data Sources
 
