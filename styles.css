@@ -261,13 +261,25 @@ main ol {
 }
 
 main img {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     display: block;
     margin: 1rem auto 1.4rem;
     border-radius: 14px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px) {
+    main img {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 600px) {
+    main img {
+        max-width: 96%;
+    }
 }
 
 main li {
