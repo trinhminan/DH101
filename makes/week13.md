@@ -9,7 +9,16 @@ permalink: /makes/week13/
 ## The Artifact
 This week’s artifact is a speculative breakup letter dated April 19, 2046. The letter imagines a near future where one partner relies heavily on an AI therapist, and the relationship slowly loses emotional spontaneity. Instead of open, imperfect conversation, communication becomes polished and clinical.
 
-[Read the artifact (PDF)]({{ '/assets/images/week13/april-19-2046.pdf' | relative_url }})
+<div class="pdf-embed" role="region" aria-label="Embedded PDF: April 19, 2046 letter">
+	<iframe
+		src="{{ '/assets/images/week13/april-19-2046.pdf' | relative_url }}"
+		title="Week 13 Artifact PDF"
+		loading="lazy">
+	</iframe>
+</div>
+
+If the PDF doesn’t load in your browser, use this link instead:
+[Open the artifact PDF]({{ '/assets/images/week13/april-19-2046.pdf' | relative_url }})
 
 ## Process Notes
 I made this as a one-page fictional letter written in first person to keep the emotional tone intimate and uncomfortable. I started from a simple “future scenario” question: what if AI therapy works too well at making people emotionally articulate, but also filters out the vulnerable, contradictory parts of being human?

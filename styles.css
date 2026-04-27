@@ -35,6 +35,24 @@ body {
     padding: 0 2rem;
 }
 
+/* Embedded PDFs */
+.pdf-embed {
+    margin: 1.2rem 0 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: rgba(26, 28, 32, 0.65);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.pdf-embed iframe {
+    display: block;
+    width: 100%;
+    height: min(85vh, 980px);
+    border: 0;
+    background: #fff;
+}
+
 nav {
     border-bottom: 1px solid var(--border-color);
     padding: 1.2rem 0;
