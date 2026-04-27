@@ -260,6 +260,16 @@ main ol {
     margin: 0.3rem 0 1rem 1.5rem;
 }
 
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto 1.4rem;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
 main li {
     margin-bottom: 0.25rem;
 }
