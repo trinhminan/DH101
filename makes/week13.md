@@ -11,7 +11,7 @@ This week’s artifact is a speculative breakup letter dated April 19, 2046. The
 
 <div class="pdf-embed" role="region" aria-label="Embedded PDF: April 19, 2046 letter">
 	<iframe
-		src="{{ '/assets/images/week13/april-19-2046.pdf' | relative_url }}"
+		src="{{ '/assets/images/week13/april-19-2046.pdf' | relative_url }}#zoom=150&view=FitH"
 		title="Week 13 Artifact PDF"
 		loading="lazy">
 	</iframe>
