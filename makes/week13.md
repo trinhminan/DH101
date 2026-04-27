@@ -17,6 +17,9 @@ This week’s artifact is a speculative breakup letter dated April 19, 2046. The
 	</iframe>
 </div>
 
+Prefer full screen?
+[Open the PDF in a new tab]({{ '/assets/images/week13/april-19-2046.pdf' | relative_url }})
+
 If the PDF doesn’t load in your browser, use this link instead:
 [Open the artifact PDF]({{ '/assets/images/week13/april-19-2046.pdf' | relative_url }})
 
