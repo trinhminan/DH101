@@ -8,4 +8,8 @@ permalink: /reflections/week13/
 
 # Week 13 Reflection
 
-Reflect 13: Do we imagine AI futures as utopian, dystopian, or something in between? What do those visions reveal about us?
+AI futures are most believable when they are imagined as something in between utopia and dystopia. Utopian stories often assume technology will solve human problems cleanly, while dystopian stories assume it will only amplify control, isolation, and inequality. In practice, both tendencies can happen at once. AI can increase access to knowledge, language support, and mental-health resources, while also introducing new dependencies, biases, and forms of social distance.
+
+What these visions reveal is less about AI itself and more about human priorities and fears. Utopian visions reveal our desire for fairness, ease, and relief from uncertainty. Dystopian visions reveal our fear of losing autonomy, meaningful work, privacy, and authentic relationships. Both are really stories about power: who designs systems, who benefits, and who is made vulnerable by them.
+
+For me, the most useful frame is not “Is AI good or bad?” but “What kinds of human life are we building around AI?” If we design around efficiency alone, we risk flattening empathy and accountability. If we design around dignity, transparency, and shared responsibility, AI can support human flourishing without replacing human judgment. So the future is not fixed; it depends on everyday design choices, policy choices, and personal habits of use.
