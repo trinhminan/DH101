@@ -36,6 +36,31 @@ body {
 }
 
 /* Embedded PDFs */
+.pdf-thumb {
+    margin: 1.2rem 0 1rem;
+}
+
+.pdf-thumb a {
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    background: rgba(26, 28, 32, 0.65);
+    box-shadow: var(--shadow);
+}
+
+.pdf-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pdf-thumb figcaption {
+    color: var(--muted-text);
+    font-size: 0.98rem;
+    margin-top: 0.55rem;
+}
+
 .pdf-embed {
     margin: 1.2rem 0 1.6rem;
     border: 1px solid var(--border-color);

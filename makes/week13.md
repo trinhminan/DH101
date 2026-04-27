@@ -9,6 +9,21 @@ permalink: /makes/week13/
 ## The Artifact
 This week’s artifact is a speculative breakup letter dated April 19, 2046. The letter imagines a near future where one partner relies heavily on an AI therapist, and the relationship slowly loses emotional spontaneity. Instead of open, imperfect conversation, communication becomes polished and clinical.
 
+<figure class="pdf-thumb">
+	<a href="{{ '/assets/images/week13/april-19-2046.pdf' | relative_url }}" target="_blank" rel="noopener">
+		<img
+			src="{{ '/assets/images/week13/april-19-2046-thumb-960.png' | relative_url }}"
+			srcset="
+				{{ '/assets/images/week13/april-19-2046-thumb-480.png' | relative_url }} 480w,
+				{{ '/assets/images/week13/april-19-2046-thumb-960.png' | relative_url }} 960w,
+				{{ '/assets/images/week13/april-19-2046-thumb-1440.png' | relative_url }} 1440w
+			"
+			sizes="(max-width: 700px) 92vw, 980px"
+			alt="Preview thumbnail of the Week 13 artifact PDF (first page)." />
+	</a>
+	<figcaption>Preview (tap/click to open full PDF in a new tab).</figcaption>
+</figure>
+
 <div class="pdf-embed" role="region" aria-label="Embedded PDF: April 19, 2046 letter">
 	<iframe
 		src="{{ '/assets/images/week13/april-19-2046.pdf' | relative_url }}#zoom=150&view=FitH"
