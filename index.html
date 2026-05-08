@@ -11,19 +11,20 @@ title: DH101 - Digital Humanities Journey
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <h1 class="site-title">DH101</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#reflections">Reflections</a></li>
-                <li><a href="{{ '/pages/about/' | relative_url }}">About</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="page-wrapper">
+        <nav class="liquid-glass">
+            <div class="container">
+                <h1 class="site-title">DH101</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#reflections">Reflections</a></li>
+                    <li><a href="{{ '/pages/about/' | relative_url }}">About</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <main class="container">
-        <section id="home" class="intro">
+        <main class="container page-content">
+        <section id="home" class="intro animate-fade-rise">
             <h2>Welcome to My Digital Humanities Journey</h2>
             <p>This site documents my exploration through DH101, where I engage with digital tools, 
             critical making, and reflective practices. Here you'll find weekly reflections, 
@@ -32,7 +33,7 @@ title: DH101 - Digital Humanities Journey
         </section>
 
         <section id="makes" class="makes">
-            <h2>Makes & Projects</h2>
+            <h2 class="animate-fade-rise">Makes & Projects</h2>
             <div class="reflection-grid">
                 <a href="{{ '/makes/week01/' | relative_url }}" class="reflection-card">
                     <div class="card-emoji">🔍</div>
@@ -95,12 +96,34 @@ title: DH101 - Digital Humanities Journey
                 <li><a href="{{ '/pages/markdown-guide/' | relative_url }}">Markdown Guide</a></li>
             </ul>
         </section>
-    </main>
+        </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 DH101 Project</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 DH101 Project</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth page transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('page-loaded');
+        });
+
+        // Add fade effect on link clicks for internal navigation
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('#')) {
+                    e.preventDefault();
+                    document.body.classList.remove('page-loaded');
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
