@@ -30,15 +30,157 @@
         </footer>
     </div>
 
+    <!-- Background Music -->
+    <audio id="bgMusic" preload="auto" loop playsinline style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+        <source src="{{ '/assets/bg-music.mp3' | relative_url }}" type="audio/mpeg">
+    </audio>
+
+    <!-- Button Sound Effect -->
+    <audio id="buttonSound" preload="auto" playsinline style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+        <source src="{{ '/assets/button-sound.mp3' | relative_url }}" type="audio/mpeg">
+    </audio>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.add('page-loaded');
         });
 
+        // Audio System (site-wide)
+        const bgMusic = document.getElementById('bgMusic');
+        const buttonSound = document.getElementById('buttonSound');
+        let audioUnlocked = false;
+        let bgStarted = false;
+        let lastSfxAtMs = 0;
+
+        function unlockAudio() {
+            if (audioUnlocked) return;
+            audioUnlocked = true;
+
+            if (bgMusic) {
+                bgMusic.muted = false;
+                bgMusic.volume = 0.35;
+                try { bgMusic.load(); } catch (e) {}
+            }
+
+            if (buttonSound) {
+                buttonSound.muted = false;
+                buttonSound.volume = 0.8;
+                try { buttonSound.load(); } catch (e) {}
+            }
+        }
+
+        function playButtonSound() {
+            if (!buttonSound) return;
+            if (!audioUnlocked) unlockAudio();
+
+            const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+            if (now - lastSfxAtMs < 120) return;
+            lastSfxAtMs = now;
+
+            try {
+                buttonSound.currentTime = 0;
+                buttonSound.play().catch(() => {});
+            } catch (e) {}
+        }
+
+        function ensureBgOverlay(messageHtml) {
+            let overlay = document.getElementById('soundGate');
+            if (overlay) return overlay;
+
+            overlay = document.createElement('div');
+            overlay.id = 'soundGate';
+            overlay.setAttribute('role', 'dialog');
+            overlay.setAttribute('aria-label', 'Enable sound');
+            overlay.style.position = 'fixed';
+            overlay.style.inset = '0';
+            overlay.style.zIndex = '9999';
+            overlay.style.display = 'flex';
+            overlay.style.alignItems = 'center';
+            overlay.style.justifyContent = 'center';
+            overlay.style.background = 'rgba(0,0,0,0.75)';
+            overlay.style.backdropFilter = 'blur(6px)';
+            overlay.style.webkitBackdropFilter = 'blur(6px)';
+            overlay.style.color = 'white';
+            overlay.style.textAlign = 'center';
+            overlay.style.padding = '24px';
+            overlay.style.cursor = 'pointer';
+            overlay.style.pointerEvents = 'auto';
+            overlay.style.touchAction = 'manipulation';
+
+            const defaultMessage = `
+                <div style="margin-top: 10px; opacity: 0.88; font-size: 1rem; line-height: 1.5;">
+                    Your browser may block autoplay audio. Tap/click anywhere once to enable sound.
+                </div>
+                <div style="margin-top: 14px; opacity: 0.7; font-size: 0.9rem;">(Click anywhere)</div>
+            `;
+
+            overlay.innerHTML = `
+                <div style="max-width: 520px;">
+                    <div style="font-family: Georgia, serif; font-style: italic; font-size: 2rem; line-height: 1.1;">Sound On</div>
+                    ${messageHtml || defaultMessage}
+                </div>
+            `;
+
+            const overlayHandler = async (e) => {
+                try { e.preventDefault(); } catch (err) {}
+                try { e.stopPropagation(); } catch (err) {}
+                try { e.stopImmediatePropagation(); } catch (err) {}
+                await startBackgroundMusic();
+            };
+
+            overlay.addEventListener('pointerdown', overlayHandler, { capture: true });
+            overlay.addEventListener('click', overlayHandler, { capture: true });
+
+            document.body.appendChild(overlay);
+            return overlay;
+        }
+
+        function hideBgOverlay() {
+            const overlay = document.getElementById('soundGate');
+            if (overlay) overlay.remove();
+        }
+
+        async function startBackgroundMusic() {
+            if (bgStarted || !bgMusic) return;
+            if (!audioUnlocked) unlockAudio();
+            try {
+                await bgMusic.play();
+                bgStarted = true;
+                hideBgOverlay();
+            } catch (e) {
+                const msg = `
+                    <div style="margin-top: 10px; opacity: 0.88; font-size: 1rem; line-height: 1.5;">
+                        Background music can’t start automatically (autoplay blocked).<br/>
+                        Tap/click anywhere once to start the music.
+                    </div>
+                    <div style="margin-top: 14px; opacity: 0.7; font-size: 0.9rem;">(Click anywhere)</div>
+                `;
+                ensureBgOverlay(msg);
+            }
+        }
+
+        // Try to autoplay immediately on page load (may be blocked)
+        startBackgroundMusic();
+        // If blocked, the first user gesture anywhere will start it
+        document.addEventListener('pointerdown', startBackgroundMusic, { capture: true, once: true });
+        document.addEventListener('keydown', startBackgroundMusic, { capture: true, once: true });
+
+        // Play SFX on button-like UI (nav links + buttons)
+        const buttonLikeSelector = 'button, .nav-links a, .site-title a, a.cta-button, a.reflection-button, a.project-card';
+        document.querySelectorAll(buttonLikeSelector).forEach((el) => {
+            el.addEventListener('pointerdown', () => {
+                playButtonSound();
+            }, { capture: true });
+        });
+
+        // Existing page transition on navigation (keep), but now with SFX
         document.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('#')) {
+                if (href && !href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.startsWith('#')) {
+                    // Play SFX for internal navigations
+                    playButtonSound();
+
                     e.preventDefault();
                     document.body.classList.remove('page-loaded');
                     setTimeout(() => {
