@@ -18,11 +18,16 @@ This week documents two edited selfie outputs that explore identity through AI-a
 ## Process Notes
 I uploaded original selfie materials, then iterated edits using AI/image tools to compare how each version changed mood, texture, and self-representation. I selected version 3 and 4 because they best show visible differences in style and identity framing.
 
-## Reflection
-These two outcomes highlight how editing is never neutral: each adjustment changes what feels “authentic” in a portrait. I wanted to keep enough of my features to stay recognizable, while also pushing the image into something more interpretive. Version 3 feels softer and more graphic, while version 4 feels more transformed and assertive. Presenting both together helps show process, not just final output.
-
 ## Attribution & AI Use
 - Tools used: ChatGPT image workflow + manual selection/curation
 - AI prompts (summary): prompts for stylized selfie remix with altered tone and facial detail
 - What AI generated: base transformed selfie variations
 - What you changed or decided: selected and published `selfie-3` and `selfie-4` as final Week 3 artifacts
+
+---
+
+**📝 Read my [Week 03 Reflection](../../reflections/week03/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 03 Reflection](../../reflections/week03/) to explore the deeper questions.**

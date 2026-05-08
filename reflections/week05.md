@@ -9,3 +9,7 @@ permalink: /reflections/week05/
 # Week 5 Reflection
 
 Reflect 5: How does AI alter authorship and remix culture? Who owns AI-made art?
+
+---
+
+**🎨 See the [Week 05 Artifact](../../makes/week05/) to view the project itself.**

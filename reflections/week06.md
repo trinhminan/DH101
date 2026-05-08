@@ -9,3 +9,7 @@ permalink: /reflections/week06/
 # Week 6 Reflection
 
 Reflect 6: What do we gain/lose when machines “read” literature for us?
+
+---
+
+**🎨 See the [Week 06 Artifact](../../makes/week06/) to view the project itself.**

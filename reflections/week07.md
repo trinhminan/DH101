@@ -9,3 +9,7 @@ permalink: /reflections/week07/
 # Week 7 Reflection
 
 Reflect 7: How does AI reshape global geographies of power, labor, and environment?
+
+---
+
+**🎨 See the [Week 07 Artifact](../../makes/week07/) to view the project itself.**

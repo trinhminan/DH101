@@ -9,3 +9,7 @@ permalink: /reflections/week09/
 # Week 9 Reflection
 
 Reflect 9: What is creativity when AI can generate endlessly? Where is the human in generative work?
+
+---
+
+**🎨 See the [Week 09 Artifact](../../makes/week09/) to view the project itself.**

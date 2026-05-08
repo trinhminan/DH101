@@ -33,9 +33,6 @@ Main decisions:
 - Set the date in 2046 to keep it plausible, not sci-fi distant.
 - Avoid villainizing AI outright; the conflict is about dependency and over-delegation.
 
-## Reflection
-AI futures are rarely purely utopian or purely dystopian; they usually sit in a tense middle where benefits and harms grow together. In my artifact, AI therapy is not presented as evil. It helps the partner become more emotionally fluent and conflict-aware. In that sense, the future is hopeful: people can access support, name patterns, and potentially avoid harmful cycles. But the same tool also introduces a quieter risk: people may outsource emotional labor so completely that they stop practicing vulnerability themselves.
-
 That in-between space reveals what we value most about being human. We do not only want accurate responses; we want honest, situated, imperfect ones. A delayed answer, a clumsy apology, or a contradictory feeling can be frustrating, but those moments prove there is a person present. If AI systems increasingly mediate relationships, the question is not only whether responses are “healthy” or “efficient,” but whether they still feel lived.
 
 So this imagined future is both cautionary and constructive. It warns against treating AI as a replacement for relational work, while still recognizing AI as a potentially useful companion tool. The key issue is agency: are we using AI to deepen human connection, or to avoid the discomfort that connection requires?
@@ -45,3 +42,11 @@ So this imagined future is both cautionary and constructive. It warns against tr
 - AI prompts (summary): Brainstorming and editing support for clarity, tone, and structure.
 - What AI generated: Drafting suggestions for wording and organization.
 - What you changed or decided: Final narrative voice, scenario framing, key quotes, and all final edits.
+
+---
+
+**📝 Read my [Week 13 Reflection](../../reflections/week13/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 13 Reflection](../../reflections/week13/) to explore the deeper questions.**

@@ -50,11 +50,6 @@ The barren desert setting reinforces the emptiness left after the fall of empire
 + Time and nature ultimately destroy even the greatest empires.
 + The poem criticizes hubris, tyranny, and the illusion of permanence in political authority.
 
-## Reflection
-When machines “read” literature for us, we gain new ways of seeing patterns in a text, but we may also lose some of the depth and ambiguity that comes from human interpretation. Tools like Voyant allow readers to observe structural features of a text, such as word frequency, recurring vocabulary, and patterns across different sections. In the case of Ozymandias, Voyant highlights how certain words, such as “Ozymandias,” “works,” or “wreck,” appear repeatedly, which helps reveal the poem’s focus on power and decay. This type of analysis can uncover patterns that might not be immediately visible through traditional close reading.
-However, machines cannot fully experience the emotional or cultural resonance of literature. While Voyant can show which words appear frequently, it cannot explain why those words are meaningful in a historical or symbolic context. This is where GPT functions differently. GPT attempts to interpret the text by identifying themes, rhetorical strategies, and symbolism. For example, it interprets the broken statue as a symbol of the collapse of human power and reads the irony in the inscription left by Ozymandias.
-In this way, Voyant and GPT imagine “meaning” differently. Voyant treats meaning as something that emerges from patterns in language, focusing on measurable textual data. GPT, on the other hand, treats meaning as interpretation, connecting textual elements to broader ideas such as power, time, and human ambition. While both tools provide useful insights, neither fully replaces human reading. Instead, they function best as complementary tools that support, rather than replace, literary interpretation.
-
 ## Attribution & AI Use
 - Text Used: “Ozymandias” by Percy Bysshe Shelley.
 - Source: Public domain poem (commonly available through poetry archives and educational websites).
@@ -66,3 +61,11 @@ In this way, Voyant and GPT imagine “meaning” differently. Voyant treats mea
  + Voyant Tools can identify patterns such as word frequency, trends, and collocations, but it cannot explain the meaning of those patterns. For example, while it shows which words appear frequently, it does not interpret symbolism, tone, or historical context.
 + GPT can generate interpretive explanations of themes, imagery, and rhetorical strategies, but it does not provide quantitative analysis of the text. It also relies on general knowledge rather than directly visualizing linguistic patterns within the specific dataset.
 
+
+---
+
+**📝 Read my [Week 06 Reflection](../../reflections/week06/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 06 Reflection](../../reflections/week06/) to explore the deeper questions.**

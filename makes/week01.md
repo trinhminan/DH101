@@ -23,17 +23,12 @@ Key decisions:
 - Focus on the philosophical question: is using an AI tool making, or curating?
 - Document the uncanny experience of consuming infinite synthetic identities
 
-## Reflection
-Week 1 asks: What counts as "making" in the age of AI? What might be gained/lost when machines participate in making?
-
-Using This Person Does Not Exist challenges traditional definitions of making. I didn't paint, code, or construct these faces—the algorithm did. Yet my act of engaging with the tool, selecting which faces to revisit, and writing about the experience creates meaning. In that sense, making becomes curation and interpretation rather than craftsmanship.
-
-What I gain: access to infinite visual possibility, instant exploration of pattern and variation, a tool for thought. What I lose: the material friction of handmaking, the embodied knowledge that comes from struggling with resistance, the accountability that comes with direct authorship.
-
-The deeper issue is labor. Every face on this site was learned from millions of real faces scraped without consent. The "making" is distributed across annotators who labeled training data, engineers who built the model, and the artists whose work trained the system. So making with AI is not neutral—it abstracts and obscures the human work beneath the surface.
-
 ## Attribution & AI Use
 - Tools used: This Person Does Not Exist (StyleGAN2), web browser, reflection.
 - AI prompts (summary): None—I used an existing generative model as a critical object rather than prompting it.
 - What AI generated: The synthetic faces (GAN output).
 - What you changed or decided: I selected this tool as an artifact, curated my engagement with it, and wrote the analysis connecting it to questions about making and authenticity.
+
+---
+
+**📝 Read my [Week 1 Reflection](../../reflections/week01/) to explore the deeper questions this artifact raised.**

@@ -9,3 +9,7 @@ permalink: /reflections/week10/
 # Week 10 Reflection
 
 Reflect 10: How does AI change our relationship to play, rules, and narrative?
+
+---
+
+**🎨 See the [Week 10 Artifact](../../makes/week10/) to view the project itself.**

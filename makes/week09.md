@@ -29,9 +29,6 @@ permalink: /makes/week09/
 7. Evaluation focused on personality consistency, emotional coherence, and response quality.
 8. Noted limitations such as repetitive comforting phrases.
 
-## Reflection
-This project explores how personality design can become a creative act in AI interaction. Rather than focusing only on technical prompting, I treated tone, empathy, and emotional texture as artistic materials. My intent was to build an AI voice that feels safe and caring while still playful and a little magical. The final character reflects my interest in using generative systems not just to produce content, but to shape relational experiences.
-
 ## Attribution & AI Use
 - Tools used: Character.AI
 - AI prompts (summary): Therapist-style scenarios about homesickness, anxiety, identity crisis, guilt, and relationship boundaries.
@@ -43,3 +40,11 @@ This project explores how personality design can become a creative act in AI int
 - Creator/Editor: Trinh Minh Anh
 - AI System: Character.AI conversational model
 - Project link: https://character.ai/chat/QzHE5qjz1OkoZ7jKodVq9B7KWAezCd1mUJofThSIBY4
+
+---
+
+**📝 Read my [Week 09 Reflection](../../reflections/week09/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 09 Reflection](../../reflections/week09/) to explore the deeper questions.**

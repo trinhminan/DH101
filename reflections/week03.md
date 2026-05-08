@@ -7,3 +7,7 @@ permalink: /reflections/week03/
 # Week 3 Reflection
 
 Reflect 3: What does “authenticity” mean when identity is co-constructed with AI?
+
+---
+
+**🎨 See the [Week 03 Artifact](../../makes/week03/) to view the project itself.**

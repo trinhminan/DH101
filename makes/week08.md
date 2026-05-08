@@ -30,3 +30,11 @@ This raises questions about visibility. The network makes corporations and techn
 If the network were structured differently—for example, centered on data rather than the user—it would tell a very different story: one in which individuals are not the center, but the source. This shift reframes AI not as a tool we control, but as a system that continuously learns from and reshapes us.
 
 
+
+---
+
+**📝 Read my [Week 08 Reflection](../../reflections/week08/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 08 Reflection](../../reflections/week08/) to explore the deeper questions.**

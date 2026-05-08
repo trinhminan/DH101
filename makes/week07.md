@@ -44,8 +44,6 @@ One of the most surprising findings from the mapping process was the geographic 
 
 Another surprising aspect was the scale of the physical infrastructure required to support AI systems. Data centers require massive amounts of electricity, cooling systems, and land in order to operate continuously (Crawford, 2021, p. 48). Mapping these locations made it clear that AI is not simply a digital technology but part of a much larger physical and environmental system.
 
-## Reflection
-
 ### Artist Statement
 
 This map visualizes the hidden geography of artificial intelligence infrastructure. AI is often described as something abstract or existing "in the cloud," but in reality it depends on large physical systems located around the world. By mapping the locations of data centers operated by companies such as Google and Meta, this project highlights the material infrastructure that supports AI technologies.
@@ -62,3 +60,11 @@ If this map were created from another perspective—such as that of local commun
 - **Mapping tool used:** Google My Maps
 - **Sources:** *Atlas of AI* — Kate Crawford, Greenpeace – Click Clean Reports
 - **AI assistance:** ChatGPT was used to help draft written explanations and organize research summaries.
+
+---
+
+**📝 Read my [Week 07 Reflection](../../reflections/week07/) to explore the deeper questions.**
+
+---
+
+**📝 Read my [Week 07 Reflection](../../reflections/week07/) to explore the deeper questions.**

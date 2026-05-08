@@ -9,3 +9,7 @@ permalink: /reflections/week04/
 # Week 4 Reflection
 
 Reflect 4: Is AI a collaborator, tool, or plagiarist in storytelling?
+
+---
+
+**🎨 See the [Week 04 Artifact](../../makes/week04/) to view the project itself.**

@@ -24,3 +24,7 @@ That's where making happens: in the *selection, reflection, and articulation*, n
 
 ## Next Steps
 Next week, I want to explore what authenticity means when AI can generate endlessly. I'm also curious about consent: when my image could be used to train the next model, what rights do I have? What do I owe to the people whose faces train these systems?
+
+---
+
+**🎨 See the [Week 01 Artifact](../../makes/week01/) to view the project itself.**

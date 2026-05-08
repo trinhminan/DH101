@@ -9,3 +9,7 @@ permalink: /reflections/week12/
 # Week 12 Reflection
 
 Reflect 12: Is AI sustainable? What ecological trade-offs are we willing to accept?
+
+---
+
+**🎨 See the [Week 12 Artifact](../../makes/week12/) to view the project itself.**
