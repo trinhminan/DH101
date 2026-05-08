@@ -486,6 +486,7 @@ title: DH101 - Digital Humanities Journey
             <li><a href="#projects" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">Projects</a></li>
             <li><a href="#reflections" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">Reflections</a></li>
             <li><a href="./pages/about/index.html" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">About</a></li>
+            <li><button id="soundToggle" style="background: none; border: none; color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; cursor: pointer; padding: 0;">🔇</button></li>
         </ul>
     </nav>
 
@@ -676,16 +677,28 @@ title: DH101 - Digital Humanities Journey
         });
 
         // Smooth page transition on navigation
+        let soundEnabled = false;
+        const soundToggle = document.getElementById('soundToggle');
+        const clickSound = document.getElementById('linkClickSound');
+
+        // Sound toggle button
+        soundToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            soundEnabled = !soundEnabled;
+            soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
+        });
+
         document.querySelectorAll('a:not([href^="#"])').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
                     e.preventDefault();
                     
-                    // Play the click sound
-                    const clickSound = document.getElementById('linkClickSound');
-                    clickSound.currentTime = 0;
-                    clickSound.play().catch(err => console.log('Audio play failed:', err));
+                    // Play the click sound if enabled
+                    if (soundEnabled) {
+                        clickSound.currentTime = 0;
+                        clickSound.play().catch(err => console.log('Audio play failed:', err));
+                    }
                     
                     document.body.classList.add('page-exit');
                     setTimeout(() => {
@@ -697,7 +710,7 @@ title: DH101 - Digital Humanities Journey
     </script>
 
     <!-- Click Sound -->
-    <audio id="linkClickSound" preload="auto">
+    <audio id="linkClickSound">
         <source src="./assets/link-click.mp3" type="audio/mpeg">
     </audio>
 </body>
