@@ -647,6 +647,16 @@ title: DH101 - Digital Humanities Journey
         <p>&copy; 2026 DH101 Project · Exploring Digital Humanities</p>
     </footer>
 
+    <!-- Background Music (add your file at assets/bg-music.mp3) -->
+    <audio id="bgMusic" preload="auto" loop playsinline style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+        <source src="./assets/bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Button Sound Effect -->
+    <audio id="buttonSound" preload="auto" playsinline style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+        <source src="./assets/button-sound.mp3" type="audio/mpeg">
+    </audio>
+
     <script>
         // Parallax effect
         const hero = document.querySelector('.hero');
@@ -680,73 +690,177 @@ title: DH101 - Digital Humanities Journey
         });
 
         // Audio System
-        let soundEnabled = false;
-        let audioInitialized = false;
-        const soundToggle = document.getElementById('soundToggle');
-        const clickSound = document.getElementById('linkClickSound');
+        const bgMusic = document.getElementById('bgMusic');
+        const buttonSound = document.getElementById('buttonSound');
+        let audioUnlocked = false;
+        let bgStarted = false;
+        let lastSfxAtMs = 0;
 
-        // Initialize audio on first user interaction
-        function initializeAudio() {
-            if (audioInitialized || !clickSound) return;
-            audioInitialized = true;
-            try {
-                clickSound.load();
-            } catch(e) {
-                console.error('Failed to load audio:', e);
+        function unlockAudio() {
+            if (audioUnlocked) return;
+            audioUnlocked = true;
+
+            if (bgMusic) {
+                bgMusic.muted = false;
+                bgMusic.volume = 0.35;
+                try { bgMusic.load(); } catch (e) {}
+            }
+
+            if (buttonSound) {
+                buttonSound.muted = false;
+                buttonSound.volume = 0.8;
+                try { buttonSound.load(); } catch (e) {}
             }
         }
 
-        // Sound toggle button
-        if (soundToggle) {
-            soundToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                e.stopImmediatePropagation();
-                
-                initializeAudio();
-                soundEnabled = !soundEnabled;
-                soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
-                
-                if (soundEnabled && clickSound) {
-                    clickSound.volume = 0.5;
-                    clickSound.currentTime = 0;
-                    clickSound.play().catch(err => console.log('Audio play error:', err));
-                }
-                
-                return false;
-            }, true);
+        function playButtonSound() {
+            if (!buttonSound) return;
+            if (!audioUnlocked) unlockAudio();
+
+            const now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+            // Prevent double-fire (pointerdown + click)
+            if (now - lastSfxAtMs < 120) return;
+            lastSfxAtMs = now;
+
+            try {
+                buttonSound.currentTime = 0;
+                buttonSound.play().catch(() => {});
+            } catch (e) {}
         }
 
-        // Smooth page transition on navigation
-        document.querySelectorAll('a:not([href^="#"])').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
-                    initializeAudio();
-                    e.preventDefault();
-                    
-                    // Play the click sound if enabled
-                    if (soundEnabled && clickSound) {
-                        clickSound.currentTime = 0;
-                        clickSound.volume = 0.5;
-                        clickSound.play().catch(err => console.log('Audio play error:', err));
-                    }
-                    
-                    document.body.classList.add('page-exit');
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 1000);
-                }
-            });
-        });
-                }
-            });
-        });
-    </script>
+        function isInternalUrl(href) {
+            try {
+                const url = new URL(href, window.location.href);
+                return url.origin === window.location.origin;
+            } catch (e) {
+                return false;
+            }
+        }
 
-    <!-- Click Sound -->
-    <audio id="linkClickSound" crossorigin="anonymous">
-        <source src="./assets/link-click.mp3" type="audio/mpeg">
-    </audio>
+        function attachSfxToButtons() {
+            // “Buttons” on this site are mostly anchors styled like buttons/cards
+            const selector = 'button, a.cta-button, a.reflection-button, a.project-card, nav a';
+            document.querySelectorAll(selector).forEach((el) => {
+                // Fastest: play on press-down
+                el.addEventListener('pointerdown', () => {
+                    playButtonSound();
+                }, { capture: true });
+
+                // If it’s a navigation link that leaves the page, delay slightly so sound is audible
+                if (el.tagName === 'A') {
+                    el.addEventListener('click', (e) => {
+                        const rawHref = el.getAttribute('href') || '';
+                        if (!rawHref) return;
+                        if (rawHref.startsWith('#')) return; // allow smooth-scroll handler
+                        if (rawHref.startsWith('mailto:') || rawHref.startsWith('tel:') || rawHref.startsWith('javascript:')) return;
+
+                        // Don’t interfere with new-tab / modified clicks
+                        if (e.defaultPrevented) return;
+                        if (e.button !== 0) return;
+                        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                        if (!isInternalUrl(rawHref)) return;
+
+                        e.preventDefault();
+                        const destination = el.href;
+                        setTimeout(() => {
+                            window.location.href = destination;
+                        }, 120);
+                    });
+                }
+            });
+        }
+
+        function ensureBgOverlay(messageHtml) {
+            let overlay = document.getElementById('soundGate');
+            if (overlay) return overlay;
+
+            overlay = document.createElement('div');
+            overlay.id = 'soundGate';
+            overlay.setAttribute('role', 'dialog');
+            overlay.setAttribute('aria-label', 'Enable sound');
+            overlay.style.position = 'fixed';
+            overlay.style.inset = '0';
+            overlay.style.zIndex = '9999';
+            overlay.style.display = 'flex';
+            overlay.style.alignItems = 'center';
+            overlay.style.justifyContent = 'center';
+            overlay.style.background = 'rgba(0,0,0,0.75)';
+            overlay.style.backdropFilter = 'blur(6px)';
+            overlay.style.webkitBackdropFilter = 'blur(6px)';
+            overlay.style.color = 'white';
+            overlay.style.textAlign = 'center';
+            overlay.style.padding = '24px';
+            overlay.style.cursor = 'pointer';
+            overlay.style.pointerEvents = 'auto';
+            overlay.style.touchAction = 'manipulation';
+
+            const defaultMessage = `
+                <div style="margin-top: 10px; opacity: 0.88; font-size: 1rem; line-height: 1.5;">
+                    Your browser may block autoplay audio. Tap/click anywhere once to enable sound.
+                </div>
+                <div style="margin-top: 14px; opacity: 0.7; font-size: 0.9rem;">(Click anywhere)</div>
+            `;
+
+            overlay.innerHTML = `
+                <div style="max-width: 520px;">
+                    <div style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 2rem; line-height: 1.1;">Sound On</div>
+                    ${messageHtml || defaultMessage}
+                </div>
+            `;
+
+            const overlayHandler = async (e) => {
+                // Prevent click-through to underlying links
+                try { e.preventDefault(); } catch (err) {}
+                try { e.stopPropagation(); } catch (err) {}
+                try { e.stopImmediatePropagation(); } catch (err) {}
+                await startBackgroundMusic();
+            };
+
+            overlay.addEventListener('pointerdown', overlayHandler, { capture: true });
+            overlay.addEventListener('click', overlayHandler, { capture: true });
+
+            document.body.appendChild(overlay);
+            return overlay;
+        }
+
+        function hideBgOverlay() {
+            const overlay = document.getElementById('soundGate');
+            if (overlay) overlay.remove();
+        }
+
+        async function startBackgroundMusic() {
+            if (bgStarted || !bgMusic) return;
+            if (!audioUnlocked) unlockAudio();
+            try {
+                await bgMusic.play();
+                bgStarted = true;
+                hideBgOverlay();
+            } catch (e) {
+                // Autoplay blocked (or no file); show overlay
+                const msg = `
+                    <div style="margin-top: 10px; opacity: 0.88; font-size: 1rem; line-height: 1.5;">
+                        Background music can’t start automatically (autoplay blocked) <br/>
+                        or the file <strong>assets/bg-music.mp3</strong> is missing.
+                        <div style="margin-top: 10px; opacity: 0.85; font-size: 0.95rem; line-height: 1.5;">
+                            Tap/click anywhere once to start the music.
+                        </div>
+                    </div>
+                    <div style="margin-top: 14px; opacity: 0.7; font-size: 0.9rem;">(Click anywhere)</div>
+                `;
+                ensureBgOverlay(msg);
+            }
+        }
+
+        // Try to autoplay immediately on page load (may be blocked)
+        startBackgroundMusic();
+
+        // If blocked, the first user gesture anywhere will start it
+        document.addEventListener('pointerdown', startBackgroundMusic, { capture: true, once: true });
+        document.addEventListener('keydown', startBackgroundMusic, { capture: true, once: true });
+
+        // SFX for all buttons/CTAs
+        attachSfxToButtons();
+
+    </script>
 </body>
 </html>
