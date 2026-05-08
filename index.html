@@ -7,120 +7,567 @@ title: DH101 - Digital Humanities Journey
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <title>DH101 - Digital Humanities Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/framer-motion@11.11.17/dist/framer-motion.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeOutUp {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes backgroundFadeIn {
+            from {
+                opacity: 0;
+                filter: blur(5px);
+            }
+            to {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        @keyframes heroHeadingRise {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heroSubRise {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heroButtonRise {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        body {
+            background: #000;
+            font-family: 'Barlow', sans-serif;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        body.page-exit {
+            animation: fadeOutUp 1.2s ease-in forwards;
+        }
+
+        .hero {
+            animation: backgroundFadeIn 1.2s ease-out;
+        }
+
+        .hero-content h1 {
+            animation: heroHeadingRise 0.8s ease-out 0.3s both;
+        }
+
+        .hero-content p {
+            animation: heroSubRise 0.8s ease-out 0.6s both;
+        }
+
+        .hero-cta {
+            animation: heroButtonRise 0.8s ease-out 0.9s both;
+        }
+
+        [style*="--font-heading"] {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .font-heading {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        /* Liquid-glass utilities */
+        .liquid-glass {
+            background: rgba(255,255,255,0.01);
+            background-blend-mode: luminosity;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: none;
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .liquid-glass::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1.4px;
+            background: linear-gradient(180deg,
+                rgba(255,255,255,0.45) 0%,
+                rgba(255,255,255,0.15) 20%,
+                rgba(255,255,255,0) 40%,
+                rgba(255,255,255,0) 60%,
+                rgba(255,255,255,0.15) 80%,
+                rgba(255,255,255,0.45) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .liquid-glass-strong {
+            background: rgba(255,255,255,0.01);
+            background-blend-mode: luminosity;
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            border: none;
+            box-shadow: 4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .liquid-glass-strong::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1.4px;
+            background: linear-gradient(180deg,
+                rgba(255,255,255,0.5) 0%,
+                rgba(255,255,255,0.2) 20%,
+                rgba(255,255,255,0) 40%,
+                rgba(255,255,255,0) 60%,
+                rgba(255,255,255,0.2) 80%,
+                rgba(255,255,255,0.5) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            background-image: url('/assets/hero-bg.jpg');
+            background-size: 110%;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+            animation: zoomIn 15s ease-in-out forwards;
+        }
+
+        @keyframes zoomIn {
+            from {
+                background-size: 110%;
+            }
+            to {
+                background-size: 130%;
+            }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 10vw, 6rem);
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-weight: 400;
+            margin: 0 0 20px 0;
+            letter-spacing: -1px;
+            color: white;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 20px 0;
+            font-weight: 300;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 192, 203, 0.3);
+            border-radius: 9999px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 182, 193, 0.8);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 192, 203, 0.3);
+        }
+
+        .nav-fixed {
+            position: fixed;
+            top: 1rem;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-logo {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        .intro-section {
+            background: #000;
+            background-image: url('/assets/about-bg.gif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 100px 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .intro-section h2 {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.9;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .intro-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .intro-section {
+            position: relative;
+        }
+
+        .intro-section > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .projects-section {
+            background: #000;
+            padding: 80px 40px;
+        }
+
+        .projects-section h2 {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.25rem;
+            padding: 30px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            backdrop-filter: blur(4px);
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 192, 203, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255, 192, 203, 0.2);
+        }
+
+        .project-card:hover .project-emoji {
+            transform: scale(1.15);
+        }
+
+        .project-emoji {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card h3 {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        footer {
+            background: #000;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .projects-section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="page-wrapper">
-        <nav class="liquid-glass">
-            <div class="container">
-                <h1 class="site-title">DH101</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#reflections">Reflections</a></li>
-                    <li><a href="{{ '/pages/about/' | relative_url }}">About</a></li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="nav-fixed liquid-glass" style="border-radius: 9999px; margin: 1rem 2rem; width: auto; left: auto; right: 2rem;">
+        <div class="nav-logo">A</div>
+        <div style="flex: 1;"></div>
+        <ul style="display: flex; gap: 1rem; align-items: center; margin: 0; padding: 0; list-style: none;">
+            <li><a href="#projects" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">Projects</a></li>
+            <li><a href="/pages/about/index.html" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Journey</h1>
+            <p>Exploring digital humanities, critical making, and the stories we tell in the digital age.</p>
+            <div style="margin-top: 2rem;">
+                <a href="#about" class="cta-button">About Me</a>
             </div>
-        </nav>
+        </div>
+    </section>
 
-        <main class="container page-content">
-        <section id="home" class="intro animate-fade-rise">
-            <h2>Welcome to My Digital Humanities Journey</h2>
-            <p>This site documents my exploration through DH101, where I engage with digital tools, 
-            critical making, and reflective practices. Here you'll find weekly reflections, 
-            creative projects, and thoughts on accessibility, sustainability, and the role of AI 
-            in digital humanities.</p>
-        </section>
+    <!-- About Intro Section -->
+    <section class="intro-section" id="about">
+        <h2>About This Journey</h2>
+        <p>
+            I'm <strong>Anh</strong>, a Communication student exploring the intersection of technology, creativity, and human expression. DH101 is my thinking space—a collection of "sidequests" in digital humanities where I experiment with tools, ideas, and critical perspectives. Here you'll find weekly reflections, creative projects, and explorations into topics like AI ethics, digital storytelling, cultural remix, and more.
+        </p>
+        <a href="#projects" class="cta-button">Explore My Work</a>
+    </section>
 
-        <section id="makes" class="makes">
-            <h2 class="animate-fade-rise">Makes & Projects</h2>
-            <div class="reflection-grid">
-                <a href="{{ '/makes/week01/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🔍</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Makes & Projects</h2>
+            <div class="grid">
+                <a href="/makes/week01/index.html" class="project-card">
+                    <div class="project-emoji">🔍</div>
                     <h3>Reverse Engineering</h3>
                 </a>
-                <a href="{{ '/makes/week03/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🤳</div>
+                <a href="/makes/week03/index.html" class="project-card">
+                    <div class="project-emoji">🤳</div>
                     <h3>Selfie & Identity</h3>
                 </a>
-                <a href="{{ '/makes/week04/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">💭</div>
+                <a href="/makes/week04/index.html" class="project-card">
+                    <div class="project-emoji">💭</div>
                     <h3>Comic & Storytelling</h3>
                 </a>
-                <a href="{{ '/makes/week05/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🎬</div>
+                <a href="/makes/week05/index.html" class="project-card">
+                    <div class="project-emoji">🎬</div>
                     <h3>GIF & Remix Culture</h3>
                 </a>
-                <a href="{{ '/makes/week06/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">📖</div>
+                <a href="/makes/week06/index.html" class="project-card">
+                    <div class="project-emoji">📖</div>
                     <h3>Text & Distant Reading</h3>
                 </a>
-                <a href="{{ '/makes/week07/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🗺️</div>
+                <a href="/makes/week07/index.html" class="project-card">
+                    <div class="project-emoji">🗺️</div>
                     <h3>Mapping AI Worlds</h3>
                 </a>
-                <a href="{{ '/makes/week08/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🕸️</div>
+                <a href="/makes/week08/index.html" class="project-card">
+                    <div class="project-emoji">🕸️</div>
                     <h3>Networks of Knowledge</h3>
                 </a>
-                <a href="{{ '/makes/week09/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🤖</div>
+                <a href="/makes/week09/index.html" class="project-card">
+                    <div class="project-emoji">🤖</div>
                     <h3>Bots & Generators</h3>
                 </a>
-                <a href="{{ '/makes/week10/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🎮</div>
+                <a href="/makes/week10/index.html" class="project-card">
+                    <div class="project-emoji">🎮</div>
                     <h3>Games & Play</h3>
                 </a>
-                <a href="{{ '/makes/week11/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">💼</div>
+                <a href="/makes/week11/index.html" class="project-card">
+                    <div class="project-emoji">💼</div>
                     <h3>AI & Labor</h3>
                 </a>
-                <a href="{{ '/makes/week12/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🌍</div>
+                <a href="/makes/week12/index.html" class="project-card">
+                    <div class="project-emoji">🌍</div>
                     <h3>AI & Ecology</h3>
                 </a>
-                <a href="{{ '/makes/week13/' | relative_url }}" class="reflection-card">
-                    <div class="card-emoji">🚀</div>
+                <a href="/makes/week13/index.html" class="project-card">
+                    <div class="project-emoji">🚀</div>
                     <h3>Futures of AI & Humanity</h3>
                 </a>
             </div>
-        </section>
+    </section>
 
-        <section class="additional-links">
-            <h2>Additional Resources</h2>
-            <ul>
-                <li><a href="{{ '/pages/about/' | relative_url }}">About This Project</a></li>
-                <li><a href="{{ '/pages/how-i-use-ai/' | relative_url }}">How I Use AI</a></li>
-                <li><a href="{{ '/pages/accessibility/' | relative_url }}">Accessibility Statement</a></li>
-                <li><a href="{{ '/pages/sustainability/' | relative_url }}">Sustainability Considerations</a></li>
-                <li><a href="{{ '/pages/markdown-guide/' | relative_url }}">Markdown Guide</a></li>
+    <!-- Resources -->
+    <section style="background: #000; padding: 60px 40px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 2rem; color: white; margin-bottom: 40px; text-align: center;">Additional Resources</h2>
+            <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                <li><a href="/pages/about/index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 1rem; transition: color 0.3s;">About This Project</a></li>
+                <li><a href="/pages/how-i-use-ai/index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 1rem; transition: color 0.3s;">How I Use AI</a></li>
+                <li><a href="/pages/accessibility/index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 1rem; transition: color 0.3s;">Accessibility</a></li>
+                <li><a href="/pages/sustainability/index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 1rem; transition: color 0.3s;">Sustainability</a></li>
+                <li><a href="/pages/markdown-guide/index.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; font-size: 1rem; transition: color 0.3s;">Markdown Guide</a></li>
             </ul>
-        </section>
-        </main>
+        </div>
+    </section>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2026 DH101 Project</p>
-            </div>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DH101 Project · Exploring Digital Humanities</p>
+    </footer>
 
     <script>
-        // Smooth page transitions
-        document.addEventListener('DOMContentLoaded', function() {
-            document.body.classList.add('page-loaded');
+        // Parallax effect
+        const hero = document.querySelector('.hero');
+        const heroContent = document.querySelector('.hero-content');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const parallaxSpeed = 0.5;
+            
+            // Move background slower than scroll
+            if (scrollY < window.innerHeight) {
+                hero.style.backgroundPosition = `center ${scrollY * parallaxSpeed}px`;
+            }
+            
+            // Move content up as you scroll
+            if (scrollY < window.innerHeight) {
+                heroContent.style.opacity = Math.max(0, 1 - (scrollY / window.innerHeight));
+                heroContent.style.transform = `translateY(${scrollY * 0.4}px)`;
+            }
         });
 
-        // Add fade effect on link clicks for internal navigation
-        document.querySelectorAll('a').forEach(link => {
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Smooth page transition on navigation
+        document.querySelectorAll('a:not([href^="#"])').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.startsWith('mailto:') && !href.startsWith('#')) {
+                if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
                     e.preventDefault();
-                    document.body.classList.remove('page-loaded');
+                    document.body.classList.add('page-exit');
                     setTimeout(() => {
                         window.location.href = href;
-                    }, 300);
+                    }, 1000);
                 }
             });
         });
