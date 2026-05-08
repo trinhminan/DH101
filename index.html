@@ -681,6 +681,12 @@ title: DH101 - Digital Humanities Journey
                 const href = this.getAttribute('href');
                 if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
                     e.preventDefault();
+                    
+                    // Play the click sound
+                    const clickSound = document.getElementById('linkClickSound');
+                    clickSound.currentTime = 0;
+                    clickSound.play().catch(err => console.log('Audio play failed:', err));
+                    
                     document.body.classList.add('page-exit');
                     setTimeout(() => {
                         window.location.href = href;
@@ -689,5 +695,10 @@ title: DH101 - Digital Humanities Journey
             });
         });
     </script>
+
+    <!-- Click Sound -->
+    <audio id="linkClickSound" preload="auto">
+        <source src="./assets/link-click.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
