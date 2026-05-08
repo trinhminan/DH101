@@ -486,7 +486,7 @@ title: DH101 - Digital Humanities Journey
             <li><a href="#projects" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">Projects</a></li>
             <li><a href="#reflections" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">Reflections</a></li>
             <li><a href="./pages/about/index.html" style="color: rgba(255, 255, 255, 0.9); text-decoration: none; font-size: 0.9rem;">About</a></li>
-            <li><button id="soundToggle" style="background: none; border: none; color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; cursor: pointer; padding: 0;">🔇</button></li>
+            <li><button id="soundToggle" style="background: none; border: none; color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; cursor: pointer; padding: 0; z-index: 100; pointer-events: all;">🔇</button></li>
         </ul>
     </nav>
 
@@ -679,58 +679,57 @@ title: DH101 - Digital Humanities Journey
             });
         });
 
-        // Smooth page transition on navigation
+        // Audio System
         let soundEnabled = false;
+        let audioInitialized = false;
         const soundToggle = document.getElementById('soundToggle');
         const clickSound = document.getElementById('linkClickSound');
 
-        console.log('Sound toggle element:', soundToggle);
-        console.log('Click sound element:', clickSound);
+        // Initialize audio on first user interaction
+        function initializeAudio() {
+            if (audioInitialized || !clickSound) return;
+            audioInitialized = true;
+            try {
+                clickSound.load();
+            } catch(e) {
+                console.error('Failed to load audio:', e);
+            }
+        }
 
         // Sound toggle button
         if (soundToggle) {
             soundToggle.addEventListener('click', function(e) {
-                console.log('Sound toggle clicked!');
                 e.preventDefault();
                 e.stopPropagation();
+                e.stopImmediatePropagation();
+                
+                initializeAudio();
                 soundEnabled = !soundEnabled;
                 soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
-                console.log('Sound enabled:', soundEnabled);
                 
                 if (soundEnabled && clickSound) {
-                    // Load and test the audio
-                    clickSound.load();
-                    // Try playing a quick test
                     clickSound.volume = 0.5;
                     clickSound.currentTime = 0;
-                    const playPromise = clickSound.play();
-                    if (playPromise !== undefined) {
-                        playPromise.then(() => {
-                            console.log('Audio test played successfully');
-                            clickSound.pause();
-                            clickSound.currentTime = 0;
-                        }).catch(err => console.log('Initial audio test failed:', err));
-                    }
+                    clickSound.play().catch(err => console.log('Audio play error:', err));
                 }
-            });
-        } else {
-            console.error('Sound toggle button not found!');
+                
+                return false;
+            }, true);
         }
 
+        // Smooth page transition on navigation
         document.querySelectorAll('a:not([href^="#"])').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
+                    initializeAudio();
                     e.preventDefault();
                     
                     // Play the click sound if enabled
                     if (soundEnabled && clickSound) {
                         clickSound.currentTime = 0;
                         clickSound.volume = 0.5;
-                        const playPromise = clickSound.play();
-                        if (playPromise !== undefined) {
-                            playPromise.catch(err => console.log('Audio play failed:', err));
-                        }
+                        clickSound.play().catch(err => console.log('Audio play error:', err));
                     }
                     
                     document.body.classList.add('page-exit');
@@ -746,7 +745,7 @@ title: DH101 - Digital Humanities Journey
     </script>
 
     <!-- Click Sound -->
-    <audio id="linkClickSound">
+    <audio id="linkClickSound" crossorigin="anonymous">
         <source src="./assets/link-click.mp3" type="audio/mpeg">
     </audio>
 </body>
