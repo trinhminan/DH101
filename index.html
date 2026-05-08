@@ -681,27 +681,38 @@ title: DH101 - Digital Humanities Journey
         const soundToggle = document.getElementById('soundToggle');
         const clickSound = document.getElementById('linkClickSound');
 
+        console.log('Sound toggle element:', soundToggle);
+        console.log('Click sound element:', clickSound);
+
         // Sound toggle button
-        soundToggle.addEventListener('click', function(e) {
-            e.stopPropagation();
-            soundEnabled = !soundEnabled;
-            soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
-            
-            if (soundEnabled) {
-                // Load and test the audio
-                clickSound.load();
-                // Try playing a quick test
-                clickSound.volume = 0.3;
-                clickSound.currentTime = 0;
-                const playPromise = clickSound.play();
-                if (playPromise !== undefined) {
-                    playPromise.then(() => {
-                        clickSound.pause();
-                        clickSound.currentTime = 0;
-                    }).catch(err => console.log('Initial audio test failed:', err));
+        if (soundToggle) {
+            soundToggle.addEventListener('click', function(e) {
+                console.log('Sound toggle clicked!');
+                e.preventDefault();
+                e.stopPropagation();
+                soundEnabled = !soundEnabled;
+                soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
+                console.log('Sound enabled:', soundEnabled);
+                
+                if (soundEnabled && clickSound) {
+                    // Load and test the audio
+                    clickSound.load();
+                    // Try playing a quick test
+                    clickSound.volume = 0.5;
+                    clickSound.currentTime = 0;
+                    const playPromise = clickSound.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            console.log('Audio test played successfully');
+                            clickSound.pause();
+                            clickSound.currentTime = 0;
+                        }).catch(err => console.log('Initial audio test failed:', err));
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            console.error('Sound toggle button not found!');
+        }
 
         document.querySelectorAll('a:not([href^="#"])').forEach(link => {
             link.addEventListener('click', function(e) {
@@ -710,7 +721,7 @@ title: DH101 - Digital Humanities Journey
                     e.preventDefault();
                     
                     // Play the click sound if enabled
-                    if (soundEnabled) {
+                    if (soundEnabled && clickSound) {
                         clickSound.currentTime = 0;
                         clickSound.volume = 0.5;
                         const playPromise = clickSound.play();
