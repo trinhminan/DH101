@@ -686,6 +686,21 @@ title: DH101 - Digital Humanities Journey
             e.stopPropagation();
             soundEnabled = !soundEnabled;
             soundToggle.textContent = soundEnabled ? '🔊' : '🔇';
+            
+            if (soundEnabled) {
+                // Load and test the audio
+                clickSound.load();
+                // Try playing a quick test
+                clickSound.volume = 0.3;
+                clickSound.currentTime = 0;
+                const playPromise = clickSound.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        clickSound.pause();
+                        clickSound.currentTime = 0;
+                    }).catch(err => console.log('Initial audio test failed:', err));
+                }
+            }
         });
 
         document.querySelectorAll('a:not([href^="#"])').forEach(link => {
@@ -697,13 +712,20 @@ title: DH101 - Digital Humanities Journey
                     // Play the click sound if enabled
                     if (soundEnabled) {
                         clickSound.currentTime = 0;
-                        clickSound.play().catch(err => console.log('Audio play failed:', err));
+                        clickSound.volume = 0.5;
+                        const playPromise = clickSound.play();
+                        if (playPromise !== undefined) {
+                            playPromise.catch(err => console.log('Audio play failed:', err));
+                        }
                     }
                     
                     document.body.classList.add('page-exit');
                     setTimeout(() => {
                         window.location.href = href;
                     }, 1000);
+                }
+            });
+        });
                 }
             });
         });
