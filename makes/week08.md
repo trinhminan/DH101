@@ -30,10 +30,12 @@ This raises questions about visibility. The network makes corporations and techn
 If the network were structured differently—for example, centered on data rather than the user—it would tell a very different story: one in which individuals are not the center, but the source. This shift reframes AI not as a tool we control, but as a system that continuously learns from and reshapes us.
 
 
+## Attribution & AI Use
+- Tools used: Kumu (embed), manual research/writing.
+- AI assistance: None for drafting the analysis text.
+- AI use log: [AI Use Log — Week 08]({{ '/ai-log/week08/' | relative_url }})
 
----
 
-**📝 Read my [Week 08 Reflection](../../reflections/week08/) to explore the deeper questions.**
 
 ---
 

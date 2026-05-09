@@ -42,10 +42,7 @@ So this imagined future is both cautionary and constructive. It warns against tr
 - AI prompts (summary): Brainstorming and editing support for clarity, tone, and structure.
 - What AI generated: Drafting suggestions for wording and organization.
 - What you changed or decided: Final narrative voice, scenario framing, key quotes, and all final edits.
-
----
-
-**📝 Read my [Week 13 Reflection](../../reflections/week13/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 13]({{ '/ai-log/week13/' | relative_url }})
 
 ---
 

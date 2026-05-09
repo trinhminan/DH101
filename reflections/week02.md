@@ -24,6 +24,10 @@ Language models can generate coherent essays, mimic poetic style, and complete s
 ## Next Steps
 Next, I want to explore whether authenticity survives when identity is shaped through AI-driven feedback loops. Can I still be "myself" if my choices are informed by algorithmic recommendations?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 02]({{ '/ai-log/week02/' | relative_url }})
+- Verification: Not applicable (no AI-generated content was included).
+
 ---
 
 **🎨 See the [Week 02 Artifact](../../makes/week02/) to view the project itself.**

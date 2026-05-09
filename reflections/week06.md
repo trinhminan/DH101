@@ -22,6 +22,10 @@ A machine can tell you that word "light" appears 247 times in a novel, tracking 
 
 ## Next Steps
 Next week, I want to explore mapping and how AI spatial visualization shapes our understanding of global power dynamics.
+
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 06]({{ '/ai-log/week06/' | relative_url }})
+- Verification: I checked any quoted lines against the poem and treated GPT’s interpretation as a draft to revise, not an authoritative reading.
 ---
 
 **🎨 See the [Week 06 Artifact](../../makes/week06/) to view the project itself.**

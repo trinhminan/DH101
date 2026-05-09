@@ -28,6 +28,7 @@ Key decisions:
 - AI prompts (summary): None—I used an existing generative model as a critical object rather than prompting it.
 - What AI generated: The synthetic faces (GAN output).
 - What you changed or decided: I selected this tool as an artifact, curated my engagement with it, and wrote the analysis connecting it to questions about making and authenticity.
+- AI use log: [AI Use Log — Week 01]({{ '/ai-log/week01/' | relative_url }})
 
 ---
 

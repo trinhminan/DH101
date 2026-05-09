@@ -24,6 +24,10 @@ An image recognition model that seems magical? Behind it: 50,000 images labeled 
 ## Next Steps
 Next week, I want to explore sustainability—what environmental costs are we paying for AI's scale?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 11]({{ '/ai-log/week11/' | relative_url }})
+- Verification: I checked that claims about invisible labor and who profits aligned with course readings and the sources cited in my deck.
+
 ---
 
 **🎨 See the [Week 11 Artifact](../../makes/week11/) to view the project itself.**

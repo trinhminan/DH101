@@ -24,6 +24,10 @@ If I use ChatGPT to generate dialogue and credit it ("This dialogue was co-writt
 ## Next Steps
 Next week, I want to explore authorship and remix more broadly. In a world where AI can recombine styles, who actually owns creative work?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 04]({{ '/ai-log/week04/' | relative_url }})
+- Verification: I reviewed AI-generated dialogue and images for stereotypes and revised/curated outputs so the final narrative reflected my intended ethical dilemma.
+
 ---
 
 **🎨 See the [Week 04 Artifact](../../makes/week04/) to view the project itself.**

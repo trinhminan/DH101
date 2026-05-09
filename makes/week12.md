@@ -17,14 +17,16 @@ Hardest Data to Find:  The most difficult data to pinpoint was the specific wate
 Uncertainties: Significant uncertainties remain regarding prompt complexity. My audit assumes a standard emission rate, but studies show that complex prompts—such as generating long essays or technical code—can require up to 50 times more energy per query than simple ones. Additionally, these calculations do not account for the "embodied carbon" of the hardware itself, which includes the energy-intensive mining of lithium and rare earth minerals required to build the GPUs that process AI queries.
 
 
+## Attribution & AI Use
+- Tools used: Manual research and synthesis; chart image creation; course website markdown.
+- AI assistance: None for generating the chart image or drafting the final write-up.
+- AI use log: [AI Use Log — Week 12]({{ '/ai-log/week12/' | relative_url }})
+
+
 # Artist Statement
 The environmental cost that most concerns me is the "hidden" consumption of water and minerals that sustains the illusion of a weightless "cloud". We are told AI is abstract, yet it is a "megamachine" made of cooling towers and lithium brine. The fact that a handful of queries can "indirectly use several liters of water per week" for cooling is a staggering trade-off for a tool often used for trivial tasks.
 True sustainability requires moving away from the "bigger is better" philosophy that defines current industry trends. It would require a total transition to renewable-powered data centers and the adoption of "Green AI" techniques like model pruning and knowledge distillation, which reduce the computational resources needed for inference. However, AI cannot be sustainable as long as it remains an extractive industry that relies on the depletion of non-renewable resources for short-lived consumer devices.
 As a user, my responsibility is to dismantle the "summit fever" that views technological expansion as inevitable. My role is to demand transparency and accountability from the "Great Houses of AI" regarding their carbon and water footprints. We must reject the "enchanted determinism" that tells us AI is too complex to regulate. Instead, I must choose to use these tools mindfully, treating every query as a material act that draws upon the earth’s finite resources.
-
----
-
-**📝 Read my [Week 12 Reflection](../../reflections/week12/) to explore the deeper questions.**
 
 ---
 

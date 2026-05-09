@@ -20,6 +20,10 @@ When I edit a photo with AI upscaling or beauty filters, is the result less "me"
 
 ## Next Steps
 Next week, I want to explore how AI collaboration changes storytelling. When an AI helps shape the narrative, where does authorship really lie?
+
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 03]({{ '/ai-log/week03/' | relative_url }})
+- Verification: I compared AI-edited images against my original selfie and avoided presenting synthetic alterations as documentary truth.
 ---
 
 **🎨 See the [Week 03 Artifact](../../makes/week03/) to view the project itself.**

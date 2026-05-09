@@ -1,18 +1,31 @@
+---
+layout: default
+title: AI Use Log Template
+permalink: /ai-log/template/
+---
 
-# AI Use Log
+# AI Use Log (Template)
 
-**Date:**2/1/2026
+Copy this template into a new file (e.g., `ai-log/weekXX.md`) and fill it in.
 
-**Tool Used:**Chat GPT
+**Date:** YYYY-MM-DD
 
-**Task / Prompt:**Given the current structure, create a website with a minimalist style.
-Include a section called “Weekly Reflections” and a short introduction.
+**Artifact/Context:** (link to the Make / page)
 
+## Tools used
+- (Tool name + version if relevant)
 
-**What the AI Suggested:** Given the current structure, create a website with a minimalist style.
-Include a section called “Weekly Reflections” and a short introduction.
+## Task / Prompt (summary)
+- (What you asked the tool to do)
 
+## What the AI suggested/generated
+- (Specific outputs that appear on the site: text snippets, images, code, etc.)
 
-**What I Accepted, Changed, or Rejected:** I accepted the overall structure and minimalist style suggested by the AI, without making major changes.
-**Why:****Why:**  
-The AI provided a simple and functional structure that aligned with my design goals. I chose to accept the suggestions as they offered a clean starting point, making it easier to iterate and experiment further.
+## What I accepted, changed, or rejected
+- (Describe edits and decisions)
+
+## Verification / correction
+- (How you checked for factual errors, bias, or misrepresentation)
+
+## Notes (ethics, limits, bias)
+- (Any concerns and how you mitigated them)

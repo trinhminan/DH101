@@ -24,6 +24,10 @@ An artist using image generation isn't less creative than a painter. Both are ma
 ## Next Steps
 Next week, I want to explore games and interactive systems—how AI changes play, rules, and narrative possibility.
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 09]({{ '/ai-log/week09/' | relative_url }})
+- Verification: I treated chatbot responses as simulated language (not professional advice) and evaluated consistency/failure modes rather than trusting content as truth.
+
 ---
 
 **🎨 See the [Week 09 Artifact](../../makes/week09/) to view the project itself.**

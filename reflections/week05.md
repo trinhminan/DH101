@@ -24,6 +24,10 @@ A GIF remix of a movie scene? I can see the original, understand the creative ch
 ## Next Steps
 Next week, I want to explore text analysis—how AI "reading" texts changes what literature means and what we're allowed to see.
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 05]({{ '/ai-log/week05/' | relative_url }})
+- Verification: I reviewed generated visuals for biased defaults and curated the loop so the remix critiques repetition/abstraction rather than celebrating it.
+
 ---
 
 **🎨 See the [Week 05 Artifact](../../makes/week05/) to view the project itself.**

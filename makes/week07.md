@@ -60,10 +60,7 @@ If this map were created from another perspective—such as that of local commun
 - **Mapping tool used:** Google My Maps
 - **Sources:** *Atlas of AI* — Kate Crawford, Greenpeace – Click Clean Reports
 - **AI assistance:** ChatGPT was used to help draft written explanations and organize research summaries.
-
----
-
-**📝 Read my [Week 07 Reflection](../../reflections/week07/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 07]({{ '/ai-log/week07/' | relative_url }})
 
 ---
 

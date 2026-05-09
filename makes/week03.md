@@ -23,10 +23,7 @@ I uploaded original selfie materials, then iterated edits using AI/image tools t
 - AI prompts (summary): prompts for stylized selfie remix with altered tone and facial detail
 - What AI generated: base transformed selfie variations
 - What you changed or decided: selected and published `selfie-3` and `selfie-4` as final Week 3 artifacts
-
----
-
-**📝 Read my [Week 03 Reflection](../../reflections/week03/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 03]({{ '/ai-log/week03/' | relative_url }})
 
 ---
 

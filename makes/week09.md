@@ -34,16 +34,13 @@ permalink: /makes/week09/
 - AI prompts (summary): Therapist-style scenarios about homesickness, anxiety, identity crisis, guilt, and relationship boundaries.
 - What AI generated: Conversational responses in a gentle and empathetic voice across multiple emotional situations.
 - What you changed or decided: I curated selected transcripts, refined personality direction, and evaluated consistency/limitations.
+- AI use log: [AI Use Log — Week 09]({{ '/ai-log/week09/' | relative_url }})
 
 ### Attribution
 - Platform: Character.AI
 - Creator/Editor: Trinh Minh Anh
 - AI System: Character.AI conversational model
 - Project link: https://character.ai/chat/QzHE5qjz1OkoZ7jKodVq9B7KWAezCd1mUJofThSIBY4
-
----
-
-**📝 Read my [Week 09 Reflection](../../reflections/week09/) to explore the deeper questions.**
 
 ---
 

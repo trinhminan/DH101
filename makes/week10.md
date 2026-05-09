@@ -36,15 +36,12 @@ Making this project changed how I think about AI governance. I no longer see mod
 - AI prompts (summary): I used AI only for light editing support (wording clarity and grammar checks), not for core narrative design.
 - What AI generated: Minor sentence-level suggestions for phrasing.
 - What you changed or decided: I wrote the branching structure, scenario content, moderation logic, endings, and final critical framing.
+- AI use log: [AI Use Log — Week 10]({{ '/ai-log/week10/' | relative_url }})
 
 ### Attribution
 - Creator/Author: Trinh Minh Anh
 - Platform/Engine: Twine 2 (Harlowe)
 - Published file: `/assets/week10/dh101-make9.html`
-
----
-
-**📝 Read my [Week 10 Reflection](../../reflections/week10/) to explore the deeper questions.**
 
 ---
 

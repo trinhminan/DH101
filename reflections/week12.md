@@ -24,6 +24,10 @@ Training a single large model produces as much carbon as a long-distance flight.
 ## Next Steps
 Next week, I want to reflect on all of this—what futures do we want to build with AI?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 12]({{ '/ai-log/week12/' | relative_url }})
+- Verification: I treated large numerical claims as estimates and grounded the sustainability argument in course readings rather than AI-generated summaries.
+
 ---
 
 **🎨 See the [Week 12 Artifact](../../makes/week12/) to view the project itself.**

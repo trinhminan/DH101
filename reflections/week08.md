@@ -24,6 +24,10 @@ A network graph of social media might show millions of users as equal nodes. But
 ## Next Steps
 Next week, I want to explore generative creativity—what does it mean for human creativity when machines can generate endlessly?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 08]({{ '/ai-log/week08/' | relative_url }})
+- Verification: I verified labels in my network map to avoid implying access to private platform internals; the analysis reflects interpretation of visible features and public documentation.
+
 ---
 
 **🎨 See the [Week 08 Artifact](../../makes/week08/) to view the project itself.**

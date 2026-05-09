@@ -17,10 +17,7 @@ permalink: /makes/week05/
 - What the AI generated: The AI generated the visual images for each frame, including the typing scene, the AI-generated portrait, the repeated grid of faces, and the blurred blank face.
 - What you changed, edited, or remixed: I selected, arranged, and sequenced the frames to create a visible loop. I adjusted timing, cropping, and placement to emphasize repetition and transformation. I also determined the conceptual progression from individuality to abstraction.
 - Sources of any reused material (if applicable): No external copyrighted images were reused. All visuals were generated through AI based on my prompt.
-
----
-
-**📝 Read my [Week 05 Reflection](../../reflections/week05/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 05]({{ '/ai-log/week05/' | relative_url }})
 
 ---
 

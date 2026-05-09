@@ -24,6 +24,10 @@ A AI model trained on facial recognition data might have been labeled by workers
 ## Next Steps
 Next week, I want to explore networks and who becomes visible or invisible when we visualize data.
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 07]({{ '/ai-log/week07/' | relative_url }})
+- Verification: I checked that claims about infrastructure and energy use matched course readings and cited sources; I avoided implying precision where public data is incomplete.
+
 ---
 
 **🎨 See the [Week 07 Artifact](../../makes/week07/) to view the project itself.**

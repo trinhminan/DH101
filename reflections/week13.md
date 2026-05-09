@@ -20,6 +20,10 @@ What these visions reveal is less about AI itself and more about human prioritie
 
 For me, the most useful frame is not "Is AI good or bad?" but "What kinds of human life are we building around AI?" If we design around efficiency alone, we risk flattening empathy and accountability. If we design around dignity, transparency, and shared responsibility, AI can support human flourishing without replacing human judgment. The future is not fixed; it depends on everyday design choices, policy choices, and personal habits of use.
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 13]({{ '/ai-log/week13/' | relative_url }})
+- Verification: I ensured AI editing suggestions (if used) did not flatten nuance into generic “both sides” language; the final framing reflects my own judgment.
+
 ---
 
 **🎨 See the [Week 13 Artifact](../../makes/week13/) to view the project itself.**

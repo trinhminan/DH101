@@ -61,10 +61,8 @@ The barren desert setting reinforces the emptiness left after the fall of empire
  + Voyant Tools can identify patterns such as word frequency, trends, and collocations, but it cannot explain the meaning of those patterns. For example, while it shows which words appear frequently, it does not interpret symbolism, tone, or historical context.
 + GPT can generate interpretive explanations of themes, imagery, and rhetorical strategies, but it does not provide quantitative analysis of the text. It also relies on general knowledge rather than directly visualizing linguistic patterns within the specific dataset.
 
+- AI use log: [AI Use Log — Week 06]({{ '/ai-log/week06/' | relative_url }})
 
----
-
-**📝 Read my [Week 06 Reflection](../../reflections/week06/) to explore the deeper questions.**
 
 ---
 

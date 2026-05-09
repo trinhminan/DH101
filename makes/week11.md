@@ -28,10 +28,7 @@ What I found most important is that invisibility is not accidental. It supports 
 - Tools used: Canva, chatGPT
 - What AI generated: Initial draft text for artifact description, process notes, and reflection structure.
 - What you changed or decided: Final wording, emphasis, section flow, and which arguments/examples to include.
-
----
-
-**📝 Read my [Week 11 Reflection](../../reflections/week11/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 11]({{ '/ai-log/week11/' | relative_url }})
 
 ---
 

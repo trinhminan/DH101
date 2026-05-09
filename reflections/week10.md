@@ -24,6 +24,10 @@ A traditional game: Beat the level following fixed rules. An AI-driven game: Exp
 ## Next Steps
 Next week, I want to explore AI labor—who does the invisible work of training and maintaining AI systems?
 
+## AI Use & Verification
+- AI use log for this week: [AI Use Log — Week 10]({{ '/ai-log/week10/' | relative_url }})
+- Verification: I accepted only sentence-level clarity edits and ensured they did not change my argument about constraint, rules, and meaning in play.
+
 ---
 
 **🎨 See the [Week 10 Artifact](../../makes/week10/) to view the project itself.**

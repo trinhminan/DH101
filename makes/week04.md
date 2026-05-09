@@ -20,10 +20,7 @@ Most importantly, the final panel emphasizes an asymmetry between AI and humanit
 - Tools used:ChatGPT (story development, dialogue drafting, and commentary support); DALL·E (comic panel image generation).
 - Human Contribution: Original narrative concept, thematic direction, panel sequencing, visual selection, caption refinement, and final reflective interpretation.
 - AI Role: The AI functioned as a creative assistant that provided generative suggestions and visual outputs. Final narrative meaning, structural decisions, and thematic emphasis were determined through human judgment and revision rather than automated authorship.
-
----
-
-**📝 Read my [Week 04 Reflection](../../reflections/week04/) to explore the deeper questions.**
+- AI use log: [AI Use Log — Week 04]({{ '/ai-log/week04/' | relative_url }})
 
 ---
 
