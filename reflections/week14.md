@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Week 14 Reflection - What does it mean to be human in the age of AI?
+title: Week 14 Reflection
+permalink: /reflections/week14/
 ---
 
 # Week 14 Reflection: What does it mean to be human in the age of AI?
